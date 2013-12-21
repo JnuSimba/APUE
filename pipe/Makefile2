@@ -1,0 +1,10 @@
+.PHONY: clean all
+CC=gcc
+CFLAGS=-Wall -g
+BIN=pipe ls_wc cat_copy pipe_block close_fd pipe_capacity pipe_buf fifo_rule fifo_rule2 \
+	fifo_read fifo_write
+all:$(BIN)
+%.o:%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+clean:
+	rm -f *.o 
