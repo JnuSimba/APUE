@@ -1,7 +1,7 @@
 APUE
 ====
 
-There are some exercises  and mini projects like miniShell about unix environment programming.
+There are some exercises  and mini projects like miniShell about unix system programming.
 
 Enter every sub directory, just run make.
 
