@@ -137,7 +137,7 @@ int main(int argc, char *argv[])
 
 	char perm[11] = {0};
 	fileperm(&sbuf, perm);
-	printf("File permission bits=%o %s\n", sbuf.st_mode & 07777, perm);
+	printf("File permission bits=%o %s\n", sbuf.st_mode & 0777, perm);
 
 	return 0;
 }
